@@ -1,0 +1,7 @@
+include ':app'
+//include ':sipua'
+//project(':sipua').projectDir=new File('C:\\Users\\klim-mobile\\Documents\\Android work\\Alex free\\original\\VoIpDialer\\restcomm-android-sdk-master\\restcomm-android-sdk-master\\sipua')
+//include ':restcomm.android.client.sdk'
+//project(':restcomm.android.client.sdk').projectDir=new File('C:\\Users\\klim-mobile\\Documents\\Android work\\Alex free\\original\\VoIpDialer\\restcomm-android-sdk-master\\restcomm-android-sdk-master\\restcomm.android.client.sdk')
+//include ':Autobahn'
+//project(':Autobahn').projectDir=new File('C:\\Users\\klim-mobile\\Documents\\Android work\\Alex free\\original\\VoIpDialer\\AutobahnAndroid-master\\AutobahnAndroid-master\\Autobahn')

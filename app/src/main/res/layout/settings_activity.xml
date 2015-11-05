@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/userId"
+            android:hint="user"
+            android:layout_alignParentLeft="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/profileSettings"
+            android:layout_alignLeft="@+id/userPass" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/userPass"
+            android:hint="password"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/userId"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Profile settings"
+            android:id="@+id/profileSettings"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check a balance"
+            android:id="@+id/goPayPal"
+            android:layout_below="@+id/saveChangeButton"
+            android:layout_marginTop="30dp"
+            android:focusable="false"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go PayPal"
+            android:id="@+id/payPal2"
+            android:layout_below="@+id/goPayPal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User id"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/userId"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Password"
+            android:id="@+id/textView2"
+            android:layout_alignBottom="@+id/userPass"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/serverPort"
+            android:layout_below="@+id/userPass"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignLeft="@+id/userPass"
+            android:hint="port" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Port"
+            android:id="@+id/textView4"
+            android:layout_alignBottom="@+id/serverPort"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save changes"
+            android:id="@+id/saveChangeButton"
+            android:layout_below="@+id/serverPort"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginTop="50dp"
+            android:layout_alignLeft="@+id/goPayPal"
+            android:layout_alignRight="@+id/goPayPal" />
+
+    </RelativeLayout>
+</LinearLayout>

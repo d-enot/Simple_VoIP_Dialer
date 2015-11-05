@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BFL VoIP Dialer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Close</string>
+    <string name="action_log_out">Log out</string>
+    <string name="action_log_in">Log in</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listLayout"
+            android:layout_below="@+id/searchLayout">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchLayout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchText"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="false"
+                android:layout_toLeftOf="@+id/searchIcon"
+                android:background="#e8e8e8"
+                android:textSize="24dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textColor="#181818"
+                android:inputType="textFilter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchIcon"
+                android:background="@android:drawable/ic_menu_search"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="2dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
